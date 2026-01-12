@@ -46,3 +46,20 @@ Cenario Outline - Repete o processo com praticamente quase todos os livros dispo
 - Organização em forma de comentários, para melhor entendimento.
 
 ## NOTA: todas as senhas e nomes de usuario são falsos e inventados por mim, não tem nenhum dado real que seja considerado sensivel.
+
+# Relatorio
+Apos usar o comando mvn test, irá ser gerado o relatorio com tudo sobre o funcionametno das features no terminal, la voce ira conseguir visualizar como cada uma funciona.
+exemplo abaixo da saida do terminal (o que mostrou para mim neste exato momento).
+
+[INFO] Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 77.652 s - in runners.AllTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:24 min
+[INFO] Finished at: 2026-01-12T11:43:50-03:00
+[INFO] ------------------------------------------------------------------------

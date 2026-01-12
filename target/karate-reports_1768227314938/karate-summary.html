@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_summary",{distinct_id:"2d75cdff-8f0e-4b8f-8a5b-881be042ca73",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Karate Summary Report</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">12</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Features</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-12 10:06:16 AM</div>
+  </div>
+</div>
+
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <a href="karate-timeline.html">Timeline</a>
+        </div>
+        <table class="features-table table table-sm">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Title</th>
+              <th class="num">Passed</th>
+              <th class="num">Failed</th>
+              <th class="num">Scenarios</th>
+              <th class="num">Time (ms)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="passed">
+              <td>
+                <a href="features.adicionarLivroAoUsuario.html">features/adicionarLivroAoUsuario.feature</a>
+              </td>
+              <td>Criar usuário e adicionar livro</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">6399</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.adicionarLivroAoUsuarioOutline.html">features/adicionarLivroAoUsuarioOutline.feature</a>
+              </td>
+              <td>Criar usuário e adicionar livros outLine</td>
+              <td class="num">7</td>
+              <td class="num">0</td>
+              <td class="num">7</td>
+              <td class="num">28761</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.atualizacaoISBN.html">features/atualizacaoISBN.feature</a>
+              </td>
+              <td>Atualizar ISBN do livro do usuário</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">6217</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.atualizacaoISBNoutLine.html">features/atualizacaoISBNoutLine.feature</a>
+              </td>
+              <td>Atualizar ISBN do livro do usuário outLine</td>
+              <td class="num">4</td>
+              <td class="num">0</td>
+              <td class="num">4</td>
+              <td class="num">17814</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.auth.html">features/auth.feature</a>
+              </td>
+              <td>Gerar token</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">1927</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.buscarLivroIsbn.html">features/buscarLivroIsbn.feature</a>
+              </td>
+              <td>Buscar livro por ISBN</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">918</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.buscarLivrosIsbnOutline.html">features/buscarLivrosIsbnOutline.feature</a>
+              </td>
+              <td>Buscar livro por ISBN outLine</td>
+              <td class="num">7</td>
+              <td class="num">0</td>
+              <td class="num">7</td>
+              <td class="num">3306</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.criarUsuario.html">features/criarUsuario.feature</a>
+              </td>
+              <td>Criar usuário e gerar token</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">2155</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.criarUsuarioNegativo.html">features/criarUsuarioNegativo.feature</a>
+              </td>
+              <td>Cenário negativo da autenticação de usuario</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1828</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.deleteAccount.html">features/deleteAccount.feature</a>
+              </td>
+              <td>Deletar Usuário</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">3288</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.listarCatalogo.html">features/listarCatalogo.feature</a>
+              </td>
+              <td>Listar os livros</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">916</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.listarCategoriaOutline.html">features/listarCategoriaOutline.feature</a>
+              </td>
+              <td>Listar os livros outLine</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">957</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+

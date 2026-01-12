@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"2d75cdff-8f0e-4b8f-8a5b-881be042ca73",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.atualizarIsbn</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-11 04:19:03 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span></span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/atualizarIsbn.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Atualizar ISBN</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name"></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 1. Dados</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref failed">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def userName = &#39;user_&#39; + Math.floor(Math.random() * 100000)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:19:03.773 classpath:features/atualizarIsbn.feature:5
+* def userName = &#39;user_&#39; + Math.floor(Math.random() * 100000)
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.auth</div>
+      </div>
+      <div class="time-cell passed">458</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.4">
+      <div class="step-ref failed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>if (!userName || !password) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.4">16:19:03.313 classpath:features/auth.feature:4
+* if (!userName || !password) karate.abort()
+js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref skipped">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>url &#39;https://bookstore.demoqa.com/Account/v1/GenerateToken&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref skipped">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request { userName: &#39;#(userName)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.8">
+      <div class="step-ref skipped">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.9">
+      <div class="step-ref skipped">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.11">
+      <div class="step-ref skipped">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.12">
+      <div class="step-ref skipped">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def result = { authToken: authToken }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://bookstore.demoqa.com/Account/v1/GenerateToken&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { &quot;userName&quot;: &quot;testuser&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">455</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.19">16:19:03.318 request:
+1 &gt; POST https://bookstore.demoqa.com/Account/v1/GenerateToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 23
+1 &gt; Host: bookstore.demoqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;userName&quot;:&quot;testuser&quot;}
+
+16:19:03.771 response time in milliseconds: 453
+1 &lt; 400
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Sun, 11 Jan 2026 19:19:03 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 59
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;3b-kfIAtNk1nsLmMi3OoOPrbSi9YOU&quot;
+{&quot;code&quot;:&quot;1200&quot;,&quot;message&quot;:&quot;UserName and Password required.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref failed">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def password = &#39;Test@1234&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">16:19:03.773 classpath:features/atualizarIsbn.feature:6
+* def password = &#39;Test@1234&#39;
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 2. Cria usuário</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def userResult = call read(&#39;classpath:features/criarUsuario.feature&#39;) { userName: userName, password: password }</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">16:19:03.773 classpath:features/atualizarIsbn.feature:9
+* def userResult = call read(&#39;classpath:features/criarUsuario.feature&#39;) { userName: userName, password: password }
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def userId = userResult.userId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">16:19:03.773 classpath:features/atualizarIsbn.feature:10
+* def userId = userResult.userId
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 3. Gera token (AGORA FUNCIONA)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def authResult = call read(&#39;classpath:features/auth.feature&#39;) { userName: userName, password: password }</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">16:19:03.773 classpath:features/atualizarIsbn.feature:13
+* def authResult = call read(&#39;classpath:features/auth.feature&#39;) { userName: userName, password: password }
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def authToken = authResult.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">16:19:03.773 classpath:features/atualizarIsbn.feature:14
+* def authToken = authResult.authToken
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 4. Lista livros</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;https://bookstore.demoqa.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">16:19:03.775 classpath:features/atualizarIsbn.feature:17
+Given url &#39;https://bookstore.demoqa.com&#39;
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>path &#39;BookStore/v1/Books&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">16:19:03.775 classpath:features/atualizarIsbn.feature:18
+And path &#39;BookStore/v1/Books&#39;
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+classpath:features/atualizarIsbn.feature:18
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">16:19:03.775 classpath:features/atualizarIsbn.feature:19
+When method GET
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+classpath:features/atualizarIsbn.feature:18
+classpath:features/atualizarIsbn.feature:19
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">16:19:03.775 classpath:features/atualizarIsbn.feature:20
+Then status 200
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+classpath:features/atualizarIsbn.feature:18
+classpath:features/atualizarIsbn.feature:19
+classpath:features/atualizarIsbn.feature:20
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref failed">22</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def oldIsbn = response.books[0].isbn</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">16:19:03.775 classpath:features/atualizarIsbn.feature:22
+* def oldIsbn = response.books[0].isbn
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+classpath:features/atualizarIsbn.feature:18
+classpath:features/atualizarIsbn.feature:19
+classpath:features/atualizarIsbn.feature:20
+classpath:features/atualizarIsbn.feature:22
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref failed">23</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def newIsbn = response.books[1].isbn</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">16:19:03.775 classpath:features/atualizarIsbn.feature:23
+* def newIsbn = response.books[1].isbn
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+classpath:features/atualizarIsbn.feature:18
+classpath:features/atualizarIsbn.feature:19
+classpath:features/atualizarIsbn.feature:20
+classpath:features/atualizarIsbn.feature:22
+classpath:features/atualizarIsbn.feature:23
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 5. Adiciona livro</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref failed">26</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;https://bookstore.demoqa.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">16:19:03.775 classpath:features/atualizarIsbn.feature:26
+Given url &#39;https://bookstore.demoqa.com&#39;
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+classpath:features/atualizarIsbn.feature:18
+classpath:features/atualizarIsbn.feature:19
+classpath:features/atualizarIsbn.feature:20
+classpath:features/atualizarIsbn.feature:22
+classpath:features/atualizarIsbn.feature:23
+classpath:features/atualizarIsbn.feature:26
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref failed">27</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>path &#39;BookStore/v1/Books&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">16:19:03.775 classpath:features/atualizarIsbn.feature:27
+And path &#39;BookStore/v1/Books&#39;
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+classpath:features/atualizarIsbn.feature:18
+classpath:features/atualizarIsbn.feature:19
+classpath:features/atualizarIsbn.feature:20
+classpath:features/atualizarIsbn.feature:22
+classpath:features/atualizarIsbn.feature:23
+classpath:features/atualizarIsbn.feature:26
+classpath:features/atualizarIsbn.feature:27
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref failed">28</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">16:19:03.775 classpath:features/atualizarIsbn.feature:28
+And header Authorization = &#39;Bearer &#39; + authToken
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+classpath:features/atualizarIsbn.feature:18
+classpath:features/atualizarIsbn.feature:19
+classpath:features/atualizarIsbn.feature:20
+classpath:features/atualizarIsbn.feature:22
+classpath:features/atualizarIsbn.feature:23
+classpath:features/atualizarIsbn.feature:26
+classpath:features/atualizarIsbn.feature:27
+classpath:features/atualizarIsbn.feature:28
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref failed">29</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.29">{
+  &quot;userId&quot;: &quot;#(userId)&quot;,
+  &quot;collectionOfIsbns&quot;: [{ &quot;isbn&quot;: &quot;#(oldIsbn)&quot; }]
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="0.29">16:19:03.775 classpath:features/atualizarIsbn.feature:29
+And request
+&quot;&quot;&quot;
+{
+  &quot;userId&quot;: &quot;#(userId)&quot;,
+  &quot;collectionOfIsbns&quot;: [{ &quot;isbn&quot;: &quot;#(oldIsbn)&quot; }]
+}
+&quot;&quot;&quot;
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+classpath:features/atualizarIsbn.feature:18
+classpath:features/atualizarIsbn.feature:19
+classpath:features/atualizarIsbn.feature:20
+classpath:features/atualizarIsbn.feature:22
+classpath:features/atualizarIsbn.feature:23
+classpath:features/atualizarIsbn.feature:26
+classpath:features/atualizarIsbn.feature:27
+classpath:features/atualizarIsbn.feature:28
+classpath:features/atualizarIsbn.feature:29
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref failed">36</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">16:19:03.775 classpath:features/atualizarIsbn.feature:36
+When method POST
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+classpath:features/atualizarIsbn.feature:18
+classpath:features/atualizarIsbn.feature:19
+classpath:features/atualizarIsbn.feature:20
+classpath:features/atualizarIsbn.feature:22
+classpath:features/atualizarIsbn.feature:23
+classpath:features/atualizarIsbn.feature:26
+classpath:features/atualizarIsbn.feature:27
+classpath:features/atualizarIsbn.feature:28
+classpath:features/atualizarIsbn.feature:29
+classpath:features/atualizarIsbn.feature:36
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref failed">37</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">16:19:03.775 classpath:features/atualizarIsbn.feature:37
+Then status 201
+&gt;&gt; classpath:features/atualizarIsbn.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var config = {};
+03:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+04: 
+05:   // Token gerado toda vez usando call
+06:   var authResult = karate.call(&#39;classpath:features/auth.feature&#39;);
+07:   config.token = authResult.authToken;
+08:   karate.log(&#39;Token gerado:&#39;, config.token);
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: if (!userName || !password) karate.abort()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;userName&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/auth.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2012)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1914)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:137)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:123)
+- &lt;js&gt;.fn(Unnamed:6)
+
+classpath:features/atualizarIsbn.feature:5
+classpath:features/atualizarIsbn.feature:6
+classpath:features/atualizarIsbn.feature:9
+classpath:features/atualizarIsbn.feature:10
+classpath:features/atualizarIsbn.feature:13
+classpath:features/atualizarIsbn.feature:14
+classpath:features/atualizarIsbn.feature:17
+classpath:features/atualizarIsbn.feature:18
+classpath:features/atualizarIsbn.feature:19
+classpath:features/atualizarIsbn.feature:20
+classpath:features/atualizarIsbn.feature:22
+classpath:features/atualizarIsbn.feature:23
+classpath:features/atualizarIsbn.feature:26
+classpath:features/atualizarIsbn.feature:27
+classpath:features/atualizarIsbn.feature:28
+classpath:features/atualizarIsbn.feature:29
+classpath:features/atualizarIsbn.feature:36
+classpath:features/atualizarIsbn.feature:37
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

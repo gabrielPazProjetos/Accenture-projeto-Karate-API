@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"2d75cdff-8f0e-4b8f-8a5b-881be042ca73",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>runners.features.auth</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-10 04:15:31 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Gerar token</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">runners/../features/auth.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Autenticação da API BookStore</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Gerar token</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref failed">4</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;https://bookstore.demoqa.com/Account/v1/GenerateToken&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">16:15:31.729 karate.env system property was: null 
+16:15:31.744 classpath:runners/../features/auth.feature:4
+Given url &#39;https://bookstore.demoqa.com/Account/v1/GenerateToken&#39;
+&gt;&gt; classpath:runners/../features/auth.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07: 
+08: function fn() {
+09:   var config = {};
+10:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+11:   return config;
+12: }
+13:   if (env == &#39;dev&#39;) {
+14:     // customize dev config
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize e2e config
+17:   }
+18: 
+19:   return config;
+20: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:runners/../features/auth.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref failed">5</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request { &quot;userName&quot;: &quot;testuser&quot;, &quot;password&quot;: &quot;Test@1234&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:15:31.744 classpath:runners/../features/auth.feature:5
+And request { &quot;userName&quot;: &quot;testuser&quot;, &quot;password&quot;: &quot;Test@1234&quot; }
+&gt;&gt; classpath:runners/../features/auth.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07: 
+08: function fn() {
+09:   var config = {};
+10:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+11:   return config;
+12: }
+13:   if (env == &#39;dev&#39;) {
+14:     // customize dev config
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize e2e config
+17:   }
+18: 
+19:   return config;
+20: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:runners/../features/auth.feature:4
+classpath:runners/../features/auth.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref failed">6</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">16:15:31.744 classpath:runners/../features/auth.feature:6
+When method POST
+&gt;&gt; classpath:runners/../features/auth.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07: 
+08: function fn() {
+09:   var config = {};
+10:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+11:   return config;
+12: }
+13:   if (env == &#39;dev&#39;) {
+14:     // customize dev config
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize e2e config
+17:   }
+18: 
+19:   return config;
+20: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:runners/../features/auth.feature:4
+classpath:runners/../features/auth.feature:5
+classpath:runners/../features/auth.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">16:15:31.744 classpath:runners/../features/auth.feature:7
+Then status 200
+&gt;&gt; classpath:runners/../features/auth.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07: 
+08: function fn() {
+09:   var config = {};
+10:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+11:   return config;
+12: }
+13:   if (env == &#39;dev&#39;) {
+14:     // customize dev config
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize e2e config
+17:   }
+18: 
+19:   return config;
+20: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:runners/../features/auth.feature:4
+classpath:runners/../features/auth.feature:5
+classpath:runners/../features/auth.feature:6
+classpath:runners/../features/auth.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.token != null</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">16:15:31.745 classpath:runners/../features/auth.feature:8
+And match response.token != null
+&gt;&gt; classpath:runners/../features/auth.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07: 
+08: function fn() {
+09:   var config = {};
+10:   config.baseUrl = &#39;https://bookstore.demoqa.com&#39;;
+11:   return config;
+12: }
+13:   if (env == &#39;dev&#39;) {
+14:     // customize dev config
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize e2e config
+17:   }
+18: 
+19:   return config;
+20: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:runners/../features/auth.feature:4
+classpath:runners/../features/auth.feature:5
+classpath:runners/../features/auth.feature:6
+classpath:runners/../features/auth.feature:7
+classpath:runners/../features/auth.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
